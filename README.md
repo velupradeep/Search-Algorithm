@@ -20,26 +20,86 @@ To write a program to perform linear search and binary search using python progr
 i)	#Use a linear search method to match the item in a list.
 ```
 
-
+''' 
+Program for linear search method to match the item in a list
+Developed by:PRADEEP V
+RegisterNumber:23013543
+'''
+def linearSearch(array,n,k):
+    for i in range(0,n):
+        if (array[i]==k):
+            return i
+    return -1
+    
+array=eval(input())
+k=eval(input())
+n=len(array)
+array.sort()
+result = linearSearch(array,n,k)
+if(result == -1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result)
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 
-
-
-
-
+def binarySearchIter(array, k, low, high):
+    while low <=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+    
+array = eval(input())
+array.sort()
+k=eval(input())
+result=binarySearchIter(array,k,0,len(array)-1)
+if(result==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result)
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
-
-
-
-
+def BinarySearch(arr, k, low, high):
+    while low <=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]>k:
+            return BinarySearch(array,k,low,mid-1)
+        else:
+            return BinarySearch(array,k,mid+1,high)
+    return -1
+    
+array = eval(input())
+array.sort()
+k = eval(input())
+result=BinarySearch(array,k,0,len(array)-1)
+if(result==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result)
 ```
-## Sample Input and Output
+## Output:
+![image](https://github.com/velupradeep/Search-Algorithm/assets/150329341/967c988d-dce1-4c58-9986-2997e7e9756b)
+![image](https://github.com/velupradeep/Search-Algorithm/assets/150329341/8aa1dab3-5efe-4da1-a2a2-b36e201c6685)
+![image](https://github.com/velupradeep/Search-Algorithm/assets/150329341/6a7e613f-faaf-4eef-b354-0dda558a17bc)
+
+
 
 
 
