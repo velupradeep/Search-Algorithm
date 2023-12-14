@@ -95,9 +95,10 @@ else:
     print("Element found at index: ",result)
 ```
 ## Output:
-![image](https://github.com/velupradeep/Search-Algorithm/assets/150329341/967c988d-dce1-4c58-9986-2997e7e9756b)
-![image](https://github.com/velupradeep/Search-Algorithm/assets/150329341/8aa1dab3-5efe-4da1-a2a2-b36e201c6685)
-![image](https://github.com/velupradeep/Search-Algorithm/assets/150329341/6a7e613f-faaf-4eef-b354-0dda558a17bc)
+1.![3 12](https://github.com/velupradeep/Search-Algorithm/assets/150329341/5dd67c79-668b-4d39-beb2-44585e7f9328)
+2.![3 13](https://github.com/velupradeep/Search-Algorithm/assets/150329341/0bedf136-19b1-4bc4-a998-3881d293544b)
+3.![3 14](https://github.com/velupradeep/Search-Algorithm/assets/150329341/135a3e1a-bdcd-4ae5-96e9-ddeecab4b626)
+
 
 
 
